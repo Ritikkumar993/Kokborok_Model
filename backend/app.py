@@ -1,19 +1,19 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from transformers import pipeline
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
 # Allow requests from your Vercel frontend
-CORS(app, origins=[
-    "https://*.vercel.app",
-    "http://localhost:*",
-    "http://127.0.0.1:*"
-])
+allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:5500,http://127.0.0.1:5500')
+CORS(app, origins=[origin.strip() for origin in allowed_origins.split(',')])
 
 # Load model from Hugging Face Hub
-MODEL_NAME = "ritik3412/Kokborok_model"
+MODEL_NAME = os.environ.get('MODEL_NAME', 'ritik3412/Kokborok_model')
 print("=" * 60)
 print(f"Loading model from Hugging Face: {MODEL_NAME}")
 print("This may take a minute on first run...")

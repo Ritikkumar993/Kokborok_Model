@@ -1,8 +1,9 @@
 // ============================================
-// CONFIGURATION - Update this after deploying backend to Render
+// API URL Configuration
 // ============================================
-const API_BASE_URL = 'https://YOUR-RENDER-APP-NAME.onrender.com';
-// For local development, use: const API_BASE_URL = 'http://localhost:5000';
+// In production (Vercel): Leave empty — Vercel rewrites proxy /api/* to Render
+// For local development: Set to 'http://localhost:5000'
+const API_BASE_URL = '';
 // ============================================
 
 // POS Tag definitions with colors and descriptions
