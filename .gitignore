@@ -1,0 +1,54 @@
+# Model files (loaded from Hugging Face Hub at runtime)
+model.safetensors
+*.bin
+sentencepiece.bpe.model
+
+# Large tokenizer files (already on HF Hub)
+tokenizer.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+.gemini/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary/Report files
+*.log
+*.tmp
+~$*.docx
+*.docx
+temp.docx
+
+# Report generation scripts (not needed for deployment)
+# Uncomment if you want to exclude them:
+# generate_*.py
+# create_*.py
+# build_*.py
+# add_*.py
+# complete_*.py
+# update_*.py
+
+# Diagram files
+DFD_*.png
+ER_*.png
+*.html.bak
+
+# Environment
+.env

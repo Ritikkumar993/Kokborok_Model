@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Behind Kokborok NLP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚙️ Technology & Innovation</h1>
+            <p class="subtitle">How AI Powers Kokborok Language Processing</p>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="importance.html">Importance</a>
+            <a href="technology.html" class="active">Technology</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+            <h2>🤖 Understanding the Model</h2>
+            <div class="content-block">
+                <h3>What is Part-of-Speech (POS) Tagging?</h3>
+                <p>POS tagging is the process of marking each word in a sentence with its grammatical category (noun, verb, adjective, etc.). It's fundamental for:</p>
+                <ul>
+                    <li>Understanding sentence structure</li>
+                    <li>Building translation systems</li>
+                    <li>Creating grammar checkers</li>
+                    <li>Enabling text analysis and information extraction</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🧠 XLM-RoBERTa Architecture</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Transformer Model</h3>
+                    <p>Built on the transformer architecture with self-attention mechanisms that understand context from both directions</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Multilingual Pre-training</h3>
+                    <p>Trained on 100+ languages, providing cross-lingual knowledge that helps with low-resource languages like Kokborok</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Fine-tuning</h3>
+                    <p>Specialized training on Kokborok data to adapt the model for specific POS tagging tasks</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Token Classification</h3>
+                    <p>Each word token is classified into one of 17 grammatical categories with high accuracy</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📊 Model Specifications</h2>
+            <div class="specs-table">
+                <div class="spec-row">
+                    <div class="spec-label">Architecture</div>
+                    <div class="spec-value">XLM-RoBERTa for Token Classification</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Parameters</div>
+                    <div class="spec-value">~125 Million</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Hidden Size</div>
+                    <div class="spec-value">768 dimensions</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Layers</div>
+                    <div class="spec-value">12 transformer layers</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Attention Heads</div>
+                    <div class="spec-value">12 per layer</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Vocabulary Size</div>
+                    <div class="spec-value">250,002 tokens</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">Max Sequence Length</div>
+                    <div class="spec-value">512 tokens</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-label">POS Categories</div>
+                    <div class="spec-value">17 tags (NOUN, VERB, ADJ, etc.)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🔄 How It Works</h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Input Text</h3>
+                    <p>User enters Kokborok text into the system</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Tokenization</h3>
+                    <p>Text is broken into subword tokens using SentencePiece</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Encoding</h3>
+                    <p>Tokens converted to numerical representations</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Model Processing</h3>
+                    <p>Transformer layers analyze context and relationships</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Classification</h3>
+                    <p>Each token assigned a POS tag</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Output</h3>
+                    <p>Tagged text displayed with color coding</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>💻 Technical Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-item">
+                    <h3>🐍 Backend</h3>
+                    <ul>
+                        <li>Python 3.x</li>
+                        <li>Flask web framework</li>
+                        <li>PyTorch deep learning</li>
+                        <li>Transformers library (Hugging Face)</li>
+                    </ul>
+                </div>
+                <div class="stack-item">
+                    <h3>🎨 Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Vanilla JavaScript</li>
+                        <li>Responsive design</li>
+                        <li>RESTful API integration</li>
+                    </ul>
+                </div>
+                <div class="stack-item">
+                    <h3>🔧 Tools</h3>
+                    <ul>
+                        <li>SentencePiece tokenizer</li>
+                        <li>CORS for cross-origin requests</li>
+                        <li>JSON data format</li>
+                        <li>Git version control</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎯 Training Process</h2>
+            <div class="content-block">
+                <h3>Data Preparation</h3>
+                <p>The model was trained using annotated Kokborok text where each word was manually labeled with its correct POS tag. This requires:</p>
+                <ul>
+                    <li>Native speakers with linguistic expertise</li>
+                    <li>Consistent annotation guidelines</li>
+                    <li>Quality control and validation</li>
+                    <li>Sufficient data coverage across different contexts</li>
+                </ul>
+
+                <h3>Fine-tuning Strategy</h3>
+                <p>Starting from XLM-RoBERTa's multilingual knowledge, the model was fine-tuned specifically for Kokborok through:</p>
+                <ul>
+                    <li>Transfer learning from related languages</li>
+                    <li>Careful hyperparameter tuning</li>
+                    <li>Validation on held-out test data</li>
+                    <li>Iterative refinement based on errors</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🚀 Future Enhancements</h2>
+            <div class="future-grid">
+                <div class="future-card">
+                    <h3>Named Entity Recognition</h3>
+                    <p>Identify people, places, organizations in Kokborok text</p>
+                </div>
+                <div class="future-card">
+                    <h3>Dependency Parsing</h3>
+                    <p>Understand grammatical relationships between words</p>
+                </div>
+                <div class="future-card">
+                    <h3>Machine Translation</h3>
+                    <p>Translate between Kokborok and other languages</p>
+                </div>
+                <div class="future-card">
+                    <h3>Speech Recognition</h3>
+                    <p>Convert spoken Kokborok to text</p>
+                </div>
+                <div class="future-card">
+                    <h3>Text Generation</h3>
+                    <p>Generate coherent Kokborok text</p>
+                </div>
+                <div class="future-card">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Understand emotions in Kokborok text</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📈 Performance Metrics</h2>
+            <div class="content-block">
+                <p>Model performance is evaluated using standard NLP metrics:</p>
+                <ul>
+                    <li><strong>Accuracy:</strong> Percentage of correctly tagged tokens</li>
+                    <li><strong>Precision:</strong> How many predicted tags are correct</li>
+                    <li><strong>Recall:</strong> How many actual tags are found</li>
+                    <li><strong>F1 Score:</strong> Harmonic mean of precision and recall</li>
+                </ul>
+                <p>The model achieves competitive performance despite Kokborok being a low-resource language, demonstrating the power of transfer learning from multilingual models.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🔬 Research Contributions</h2>
+            <div class="content-block">
+                <p>This work contributes to the field of NLP by:</p>
+                <ul>
+                    <li>Demonstrating effective transfer learning for Tibeto-Burman languages</li>
+                    <li>Providing a baseline for future Kokborok NLP research</li>
+                    <li>Creating reusable resources (model, code, documentation)</li>
+                    <li>Inspiring similar efforts for other indigenous languages</li>
+                    <li>Bridging the gap between high-resource and low-resource NLP</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kokborok NLP Project | Advancing Indigenous Language Technology</p>
+        </div>
+    </footer>
+</body>
+</html>

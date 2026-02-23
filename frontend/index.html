@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokborok Language NLP Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌐 Kokborok Language NLP Model</h1>
+            <p class="subtitle">Advanced Part-of-Speech Tagging for Kokborok</p>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <a href="index.html" class="active">Home</a>
+            <a href="history.html">History</a>
+            <a href="importance.html">Importance</a>
+            <a href="technology.html">Technology</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Language History Section -->
+        <section class="section" id="history">
+            <h2>📚 About Kokborok Language</h2>
+            <div class="history-content">
+                <div class="history-card">
+                    <h3>Language Overview</h3>
+                    <p>Kokborok (also known as Tripuri) is a Tibeto-Burman language spoken by the Tripuri people in the Indian state of Tripura and neighboring regions of Bangladesh. It is the native language of the Borok people and serves as one of the official languages of Tripura.</p>
+                </div>
+                
+                <div class="history-card">
+                    <h3>Historical Significance</h3>
+                    <p>Kokborok has a rich oral tradition dating back centuries. The language was traditionally written using the Bengali script, though efforts have been made to develop a Roman script for wider accessibility. The language plays a crucial role in preserving the cultural heritage of the Tripuri community.</p>
+                </div>
+                
+                <div class="history-card">
+                    <h3>Linguistic Features</h3>
+                    <ul>
+                        <li><strong>Language Family:</strong> Sino-Tibetan → Tibeto-Burman</li>
+                        <li><strong>Speakers:</strong> Approximately 1 million native speakers</li>
+                        <li><strong>Writing System:</strong> Bengali script, Roman script</li>
+                        <li><strong>Official Status:</strong> Official language in Tripura, India</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Information Section -->
+        <section class="section" id="model-info">
+            <h2>🤖 Our NLP Model</h2>
+            <div class="model-grid">
+                <div class="model-card">
+                    <div class="icon">🎯</div>
+                    <h3>Model Architecture</h3>
+                    <p>XLM-RoBERTa fine-tuned for token classification with 12 transformer layers and 768 hidden dimensions.</p>
+                </div>
+                
+                <div class="model-card">
+                    <div class="icon">🏷️</div>
+                    <h3>POS Tags Supported</h3>
+                    <p>17 different part-of-speech categories including nouns, pronouns, verbs, adjectives, adverbs, and punctuation.</p>
+                </div>
+                
+                <div class="model-card">
+                    <div class="icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>State-of-the-art accuracy for Kokborok language processing with multilingual pre-training benefits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Section -->
+        <section class="section" id="demo">
+            <h2>🔍 Try the Model</h2>
+            <div class="demo-container">
+                <div class="input-section">
+                    <label for="text-input">Enter Kokborok text:</label>
+                    <textarea 
+                        id="text-input" 
+                        placeholder="Type or paste Kokborok text here..."
+                        rows="5"
+                    ></textarea>
+                    <button id="analyze-btn" class="btn-primary">Analyze Text</button>
+                </div>
+                
+                <div class="output-section" id="output-section" style="display: none;">
+                    <h3>Analysis Results</h3>
+                    <div id="results-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POS Tags Legend -->
+        <section class="section" id="legend">
+            <h2>🎨 Part-of-Speech Tags Legend</h2>
+            <div class="legend-grid" id="legend-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kokborok NLP Project | Preserving and Advancing Indigenous Language Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

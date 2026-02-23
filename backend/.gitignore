@@ -1,0 +1,33 @@
+# Model files (loaded from Hugging Face Hub at runtime)
+model.safetensors
+*.bin
+sentencepiece.bpe.model
+tokenizer.json
+tokenizer_config.json
+config.json
+special_tokens_map.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
